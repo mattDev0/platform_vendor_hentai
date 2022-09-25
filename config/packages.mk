@@ -16,3 +16,7 @@
 
 PRODUCT_PACKAGES += \
     RepainterServicePriv
+
+# ModuleMetadata
+PRODUCT_PACKAGES += \
+    ModuleMetadataGoogle
