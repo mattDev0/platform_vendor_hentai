@@ -18,7 +18,6 @@
 PRODUCT_PACKAGES += \
     HentaiConfigOverlay \
     PixelSetupWizardOverlayHentai \
-    SettingsGoogleOverlayHentai
 
 # Google Overlays
 PRODUCT_PACKAGES += \
@@ -37,4 +36,9 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlay2021 \
     PixelConfigOverlayCommon \
-    PixelTetheringOverlay
+    PixelTetheringOverlay \
+    SystemUIGoogleOverlay \
+    SettingsProviderOverlay \
+    SettingsGoogleOverlay \
+    PixelFwResOverlay \
+    SettingsGoogleOverlayPixel2021 
