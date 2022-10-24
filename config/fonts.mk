@@ -1,6 +1,4 @@
 #
-# Copyright (C) 2021 Raphielscape LLC.
-#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -14,13 +12,61 @@
 # limitations under the License.
 #
 
-# We have to use PRODUCT_PACKAGES (together with BUILD_PREBUILT) instead of
-# PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
-# get installed too.
-
+# Google Sans font-family
 PRODUCT_PACKAGES += \
-    HarmonyOS-Sans-Italic.ttf \
-    HarmonyOS-Sans.ttf
+    GoogleSans-Regular.ttf \
+    GoogleSans-Italic.ttf
 
-# Register vendor fonts
+# ArbutusSlab font-family
+PRODUCT_PACKAGES += \
+    ArbutusSlab-Regular.ttf
+
+# Barlow font-family
+PRODUCT_PACKAGES += \
+    Barlow-Bold.ttf \
+    Barlow-Medium.ttf
+
+# BigShouldersText font-family
+PRODUCT_PACKAGES += \
+    BigShouldersText-Bold.ttf \
+    BigShouldersText-ExtraBold.ttf
+
+# Fraunces font-family
+PRODUCT_PACKAGES += \
+    Fraunces-Regular.ttf \
+    Fraunces-SemiBold.ttf
+
+# Karla font-family
+PRODUCT_PACKAGES += \
+    Karla-Regular.ttf
+
+# Lato font-family
+PRODUCT_PACKAGES += \
+    Lato-BoldItalic.ttf \
+    Lato-Bold.ttf \
+    Lato-Italic.ttf \
+    Lato-MediumItalic.ttf \
+    Lato-Medium.ttf \
+    Lato-Regular.ttf
+
+# Lustria font-family
+PRODUCT_PACKAGES += \
+    Lustria-Regular.ttf
+
+# Rubik font-family
+PRODUCT_PACKAGES += \
+    Rubik-BoldItalic.ttf \
+    Rubik-Bold.ttf \
+    Rubik-Italic.ttf \
+    Rubik-MediumItalic.ttf \
+    Rubik-Medium.ttf \
+    Rubik-Regular.ttf
+
+# ZillaSlab font-family
+PRODUCT_PACKAGES += \
+    ZillaSlab-MediumItalic.ttf \
+    ZillaSlab-Medium.ttf \
+    ZillaSlab-SemiBoldItalic.ttf \
+    ZillaSlab-SemiBold.ttf
+
 PRODUCT_COPY_FILES += vendor/hentai/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
