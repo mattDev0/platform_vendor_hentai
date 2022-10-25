@@ -41,4 +41,4 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlay \
     SettingsGoogleOverlay \
     PixelFwResOverlay \
-    SettingsGoogleOverlayPixel2021 
+    SettingsGoogleOverlayPixel2022 
