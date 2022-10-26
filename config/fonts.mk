@@ -18,9 +18,10 @@
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
 # get installed too.
 
+# google-sans family
 PRODUCT_PACKAGES += \
-    HarmonyOS-Sans-Italic.ttf \
-    HarmonyOS-Sans.ttf
+    GoogleSans-Italic.ttf \
+    GoogleSans-Regular.ttf
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += vendor/hentai/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
