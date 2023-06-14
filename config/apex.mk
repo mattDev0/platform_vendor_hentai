@@ -14,6 +14,13 @@
 # limitations under the License.
 #
 
+# Enable Google Play system updates support
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/hentai/apex
+
+# Build all modules from source if set to true , com.android.xxx
+ifneq (true,$(MODULE_BUILD_FROM_SOURCE))
+
 # Optional ART/BT/UWB/WIFI module
 MAINLINE_INCLUDE_ART_MODULE ?= true
 MAINLINE_INCLUDE_BT_MODULE ?= true
@@ -55,10 +62,6 @@ ifeq ($(MAINLINE_INCLUDE_WIFI_MODULE),true)
 SOONG_CONFIG_wifi_module_source_build := false
 endif
 
-# Enable Google Play system updates support
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/hentai/apex
-
 # ModuleMetadata
 PRODUCT_PACKAGES += \
     ModuleMetadataGoogle
@@ -85,3 +88,5 @@ PRODUCT_PACKAGES += \
 	com.google.android.tethering \
 	com.google.android.tzdata4 \
 	com.google.mainline.primary.libs
+
+endif
