@@ -67,8 +67,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/hentai/overlay
 
-# Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
+# Inherit from lewdboratory config
+$(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
 
 # Inherit from apex config
 $(call inherit-product, vendor/hentai/config/apex.mk)
